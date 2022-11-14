@@ -1,0 +1,3 @@
+﻿param(
+$kasutajanimi,
+$tis
