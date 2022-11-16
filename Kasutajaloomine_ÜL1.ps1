@@ -13,6 +13,6 @@ $Kontokirjeldus = Read-Host -Prompt "Sisesta konto kirjeldus"
 $KasutajaParool = ConvertTo-SecureString "qwerty" -AsPlainText -Force
 #Teeme konto
 Try {
-New-LocalUser $Kasutajanimi.ToLower() -Password $KasutajaParool -FullName $Taisnimi -Description $Kontokirjeldus
+New-LocalUser $Kasutajanimi.ToLower() -Password $KasutajaParool -FullName $Taisnimi -Description $Kontokirjeldus -ErrorAction Stop
 }
-Catch [CategoryInfo] {Write-Host "See nimi ei sobi"}
+Catch {Write-Host "See nimi ei sobi"}
