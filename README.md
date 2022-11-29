@@ -5,6 +5,12 @@ Skrptid mis olen teinud Windowsi PowerShell ISE-ka
 Kasutaja Loomise skriptid
 -------------------------
 * [Skript 1](https://github.com/RenetK/Windows10/blob/master/Kasutajaloomine_%C3%9CL1.ps1) #Saab sisetstada Ees ja perenime. Genereerib parooli ja lisab selle faili ka et seda hiljem teada saada.
+ 
+Parooli genereerimiseks peab seda commandi enne kasutama
+```
+Add-Type -AssemblyName System.Web
+```
+
 * [Skript 2](https://github.com/RenetK/Windows10/blob/master/Kasutaja%20loomise%20skript.ps1) #Kasutaja loomine parameetridega.
 
 Skript 2 näide
