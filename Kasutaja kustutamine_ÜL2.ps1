@@ -16,7 +16,7 @@ Write-Output "Kasutaja $($Kasutajanimi.ToLower()) on kustutatud"
 #if else variant
 #$ErrorActionPreference = 'SilentlyContinue'
 
-#Remove-LocalUser $Kasutajanimi -ErrorAction Stop
+#Remove-LocalUser $Kasutajanimi 
 
 #if(!$?){ 
     #Write-Host "Midagi läks valesti"
